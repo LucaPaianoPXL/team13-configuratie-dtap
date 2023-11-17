@@ -1,4 +1,5 @@
 require('dotenv').config();
+const app = require("./app");
 let port;
 
 if(process.env.NODE_ENV === 'testServer') {
