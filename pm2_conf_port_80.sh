@@ -21,7 +21,7 @@ sudo -u $CURRENT_USER rm -rf /home/$CURRENT_USER/.pm2
 sudo -u $CURRENT_USER pm2 start
 
 # Add and configure startup service (Command generated from command 'pm2 startup')
-sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u $CURRENT_USER --hp /home/$CURRENT_USER
+sudo env pm2 startup systemd -u $CURRENT_USER --hp /home/$CURRENT_USER
 
 
 # Replace lines in service file
